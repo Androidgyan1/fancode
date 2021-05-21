@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#05248B"
+    android:layout_height="match_parent"
+    tools:context=".OtpScreen">
+
+   <TextView
+       android:padding="10dp"
+       android:layout_marginTop="20dp"
+       android:id="@+id/otp_number"
+       android:textSize="25sp"
+       android:text="Enter 6 digit code send\nto number"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content" />
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+   <EditText
+       android:maxLength="1"
+       android:inputType="number"
+       android:imeOptions="actionNext"
+       android:id="@+id/inputcode1"
+       android:layout_marginLeft="12dp"
+       android:background="@drawable/today_background"
+       android:layout_marginTop="4dp"
+       android:layout_width="40dp"
+       android:layout_height="40dp"></EditText>
+
+   <EditText
+       android:maxLength="1"
+       android:inputType="number"
+       android:imeOptions="actionNext"
+
+       android:id="@+id/inputcode2"
+       android:layout_marginLeft="12dp"
+       android:background="@drawable/today_background"
+       android:layout_marginTop="4dp"
+       android:layout_width="40dp"
+       android:layout_height="40dp"></EditText>
+
+
+      <EditText
+          android:maxLength="1"
+          android:inputType="number"
+          android:imeOptions="actionNext"
+
+          android:id="@+id/inputcode3"
+          android:layout_marginLeft="12dp"
+          android:background="@drawable/today_background"
+          android:layout_marginTop="4dp"
+          android:layout_width="40dp"
+          android:layout_height="40dp"></EditText>
+
+
+      <EditText
+          android:maxLength="1"
+          android:inputType="number"
+          android:imeOptions="actionNext"
+
+          android:id="@+id/inputcode4"
+          android:layout_marginLeft="12dp"
+          android:background="@drawable/today_background"
+          android:layout_marginTop="4dp"
+          android:layout_width="40dp"
+          android:layout_height="40dp"></EditText>
+
+
+
+      <EditText
+          android:maxLength="1"
+          android:inputType="number"
+          android:imeOptions="actionNext"
+
+          android:id="@+id/inputcode5"
+          android:layout_marginLeft="12dp"
+          android:background="@drawable/today_background"
+          android:layout_marginTop="4dp"
+          android:layout_width="40dp"
+          android:layout_height="40dp"></EditText>
+
+
+
+      <EditText
+          android:maxLength="1"
+          android:inputType="number"
+          android:imeOptions="actionDone"
+
+          android:id="@+id/inputcode6"
+          android:layout_marginLeft="12dp"
+          android:background="@drawable/today_background"
+          android:layout_marginTop="4dp"
+          android:layout_width="40dp"
+          android:layout_height="40dp"></EditText>
+
+   </LinearLayout>
+
+   <TextView
+       android:padding="10dp"
+       android:layout_marginTop="20dp"
+       android:id="@+id/tap_to_renter"
+       android:textSize="20sp"
+       android:text="Tap to re-enter phone number "
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content" />
+
+   <Button
+       android:id="@+id/otp"
+       android:onClick="otp"
+       android:layout_marginRight="12dp"
+       android:layout_marginLeft="12dp"
+       android:background="@drawable/button_background"
+       android:text="Next"
+       android:layout_marginTop="10dp"
+       android:layout_width="match_parent"
+       android:layout_height="50dp" />
+
+
+
+</LinearLayout>

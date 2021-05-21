@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/miHome"
+        android:title="Home"
+        android:icon="@drawable/ic_home__yellow" />
+
+    <item android:id="@+id/minews"
+        android:title="News"
+        android:icon="@drawable/ic_news" />
+
+    <item android:id="@+id/placeholder"
+        android:title="" />
+
+    <item android:id="@+id/mishedule"
+        android:title="Shedule"
+        android:icon="@drawable/ic_updates" />
+
+    <item android:id="@+id/misport"
+        android:title="Sports"
+        android:icon="@drawable/ic_sports" />
+</menu>

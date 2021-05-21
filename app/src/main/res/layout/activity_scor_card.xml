@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#05248B"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ScorCard">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:background="#051E6E"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <ImageView
+                android:onClick="score"
+                android:layout_centerVertical="true"
+                android:id="@+id/back_image"
+                android:layout_marginLeft="10dp"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/ic_left_arrow__2_">
+            </ImageView>
+
+
+            <TextView
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/back_image"
+                android:textColor="@android:color/white"
+                android:layout_marginLeft="12dp"
+                android:layout_gravity="center"
+                android:textSize="20sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="KKR vs TKR" />
+
+            <ImageView
+                android:layout_marginRight="12dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/ic_baseline_notifications_24">
+            </ImageView>
+
+
+        </RelativeLayout>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/scoreimage" />
+
+    <TextView
+        android:id="@+id/vsportz"
+        android:textSize="20sp"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="4dp"
+        android:layout_centerHorizontal="true"
+        android:text="VSportZ"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"></TextView>
+
+    <TextView
+        android:layout_below="@id/vsportz"
+        android:id="@+id/country_champ"
+        android:textSize="15sp"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="4dp"
+        android:layout_centerHorizontal="true"
+        android:text="The Country Championship 2021"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"></TextView>
+
+    <TextView
+        android:background="@drawable/strike_through"
+        android:layout_below="@id/country_champ"
+        android:id="@+id/strike"
+        android:textSize="25sp"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="4dp"
+        android:layout_centerHorizontal="true"
+        android:text="Rs 25"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"></TextView>
+
+    <TextView
+        android:layout_below="@id/country_champ"
+        android:layout_toRightOf="@id/strike"
+        android:id="@+id/free"
+        android:layout_marginLeft="12dp"
+        android:textSize="20sp"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="5dp"
+        android:layout_centerHorizontal="true"
+        android:text="free"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"></TextView>
+
+
+    <TextView
+        android:padding="4dp"
+        android:drawableLeft="@drawable/ic_play__1_"
+        android:textAlignment="center"
+        android:background="@drawable/gold_bacground"
+        android:layout_below="@id/strike"
+        android:id="@+id/play_button"
+        android:textSize="16sp"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="5dp"
+        android:layout_centerHorizontal="true"
+        android:text=" Play"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"></TextView>
+
+
+    <TextView
+        android:textAlignment="center"
+        android:layout_below="@id/play_button"
+        android:id="@+id/dream11"
+        android:textSize="12sp"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="5dp"
+        android:layout_centerHorizontal="true"
+        android:text="Continue with vsportz account"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"></TextView>
+
+
+    <TextView
+        android:textAlignment="center"
+        android:layout_below="@id/dream11"
+        android:id="@+id/differnt_account"
+        android:textSize="12sp"
+        android:textColor="#FFA200"
+        android:layout_marginTop="5dp"
+        android:layout_centerHorizontal="true"
+        android:text="Continue with diffrence account"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"></TextView>
+
+
+
+
+</RelativeLayout>
+
+
+    </LinearLayout>
+
+
+
+        <com.google.android.material.tabs.TabLayout
+            app:tabTextAppearance="@style/MyCustomTabText"
+            app:tabSelectedTextColor="#FFA200"
+            android:id="@+id/tabLayout"
+            app:tabIndicatorAnimationDuration="3"
+            android:background="#05248B"
+            app:tabIndicator="@android:color/darker_gray"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <com.google.android.material.tabs.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ScoreCard" />
+
+            <com.google.android.material.tabs.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Commentry" />
+
+            <com.google.android.material.tabs.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Overview" />
+
+
+            <com.google.android.material.tabs.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Squard" />
+
+
+        </com.google.android.material.tabs.TabLayout>
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tabLayout"></FrameLayout>
+
+
+</LinearLayout>

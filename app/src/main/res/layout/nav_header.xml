@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:background="#041955"
+    android:orientation="horizontal"
+    android:padding="16dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/nav_image"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/nav"/>
+
+
+    <TextView
+        android:id="@+id/number"
+        android:layout_toRightOf="@id/nav_image"
+        android:layout_marginTop="68dp"
+        android:layout_marginLeft="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="gmail"
+        android:textColor="@android:color/white"
+        android:textSize="12dp" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_marginTop="50dp"
+        android:layout_toRightOf="@id/nav_image"
+        android:layout_marginLeft="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Jhon Smith"
+        android:textColor="@android:color/white"
+        android:gravity="bottom|center"
+        android:textSize="14dp" />
+
+    <ImageView
+        android:src="@drawable/ic_baseline_keyboard_arrow_right_24"
+        android:layout_centerVertical="true"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignParentRight="true"></ImageView>
+
+
+</RelativeLayout>

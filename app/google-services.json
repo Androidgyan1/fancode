@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "869033330345",
+    "project_id": "vsport-d0b53",
+    "storage_bucket": "vsport-d0b53.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:869033330345:android:a4d13e3e3f549501e30bb8",
+        "android_client_info": {
+          "package_name": "technomint.app.fancode"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "869033330345-306qbruso648hsv6i6vmqlag2sujs5fv.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "technomint.app.fancode",
+            "certificate_hash": "064d0a14c0403cc0693ad04fdb86c7909dc20745"
+          }
+        },
+        {
+          "client_id": "869033330345-4jqidd5n0g6hskhf84mrcqa7f5akj86u.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBUjZikD_VZhvb4QeMz2-Mf3FxlWG0RYGU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "869033330345-4jqidd5n0g6hskhf84mrcqa7f5akj86u.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

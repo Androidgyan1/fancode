@@ -1,0 +1,94 @@
+<androidx.cardview.widget.CardView
+    android:layout_width="250dp"
+    app:cardElevation="6dp"
+    android:elevation="6dp"
+    android:layout_height="120dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingRight="5dp"
+    app:cardCornerRadius="8dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginLeft="10dp"
+    android:id="@+id/card_recyclebest"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:id="@+id/liveimage"
+            android:scaleType="fitXY"
+            android:layout_height="match_parent"
+            android:src="@drawable/live" />
+
+                <ImageView
+                    android:id="@+id/redcirle"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:src="@drawable/elips"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp" />
+
+                <TextView
+                    android:id="@+id/live"
+                    android:layout_marginTop="2dp"
+                    android:textSize="12dp"
+                    android:textStyle="bold"
+                    android:text="Live"
+                    android:layout_marginLeft="4dp"
+                    android:layout_toRightOf="@id/redcirle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <ImageView
+                    android:layout_toRightOf="@id/live"
+                    android:id="@+id/eyecirle"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginTop="6dp"
+                    android:src="@drawable/ic_baseline_remove_red_eye_24"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp" />
+
+                <TextView
+                    android:id="@+id/eye_countlive"
+                    android:layout_marginTop="2dp"
+                    android:textSize="12dp"
+                    android:textStyle="bold"
+                    android:text="100"
+                    android:layout_marginLeft="4dp"
+                    android:layout_toRightOf="@id/eyecirle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+
+                <ImageView
+                    android:layout_marginBottom="5dp"
+                    android:layout_alignParentBottom="true"
+                    android:id="@+id/play"
+                    android:layout_marginLeft="5dp"
+                    android:src="@drawable/ic_play__1_"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp" />
+
+                <TextView
+                    android:layout_marginBottom="2dp"
+                    android:layout_toRightOf="@id/play"
+                    android:layout_alignParentBottom="true"
+                    android:id="@+id/cskvsmi"
+                    android:textSize="12dp"
+                    android:textStyle="bold"
+                    android:text="CSK"
+                    android:layout_marginLeft="4dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+
+        </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

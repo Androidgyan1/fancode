@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#05248B"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SportFragment">
+
+    <GridView
+        android:id="@+id/griview"
+        android:numColumns="2"
+        android:gravity="center"
+        android:columnWidth="100dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+    <Button
+        android:layout_marginBottom="100dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:background="#051E6E"
+        android:text="Continue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></Button>
+
+
+
+
+
+</RelativeLayout>

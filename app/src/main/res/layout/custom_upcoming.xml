@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView
+    android:layout_marginBottom="8dp"
+    android:layout_marginTop="2dp"
+    android:layout_marginRight="4dp"
+    android:layout_marginLeft="4dp"
+    app:cardElevation="8dp"
+    app:cardCornerRadius="6dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    app:cardBackgroundColor="@android:color/white"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:background="#051E6E"
+        android:layout_height="wrap_content">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_centerVertical="true"
+                android:padding="4dp"
+                android:textSize="16sp"
+                android:text="Match#15 - T10"
+                android:id="@+id/match_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_marginBottom="4dp"
+                android:layout_marginTop="4dp"
+                android:drawableLeft="@drawable/ic_baseline_play_arrow_24"
+                android:textColor="@android:color/black"
+                android:background="@drawable/today_background"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dp"
+                android:layout_toLeftOf="@id/noti"
+                android:padding="6dp"
+                android:textSize="12sp"
+                android:text="1d 8h"
+                android:id="@+id/match_time"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp" />
+
+
+            <ImageView
+                android:id="@+id/noti"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="12dp"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/ic_baseline_notifications_24"
+                android:layout_width="20dp"
+                android:layout_height="20dp" />
+
+        </RelativeLayout>
+
+        <View
+            android:background="@android:color/darker_gray"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="5dp" />
+
+            <LinearLayout
+                android:padding="4dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/today_kkrimage"
+                    android:src="@drawable/kkr"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:textStyle="bold"
+                    android:text="Kolkata Knight Rider"
+                    android:id="@+id/today_kkr_match"
+                    android:layout_marginLeft="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:padding="4dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="6dp"
+                android:layout_marginTop="0dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/today_tkrimage"
+                    android:src="@drawable/trinbago"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:textStyle="bold"
+                    android:text="Trinbago Knight Rider"
+                    android:id="@+id/today_tkr_match"
+                    android:layout_marginLeft="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+        <LinearLayout
+            android:padding="8dp"
+            android:layout_marginTop="0dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:textStyle="bold"
+                android:text="Sun,9May"
+                android:id="@+id/today_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <View
+                android:layout_marginLeft="12dp"
+                android:background="@android:color/white"
+                android:layout_width="1dp"
+                android:layout_height="20dp" />
+
+            <TextView
+                android:layout_marginLeft="12dp"
+                android:textStyle="bold"
+                android:text="Watch live at 11:00Pm"
+                android:id="@+id/today_live_match"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:layout_marginTop="6dp">
+
+
+
+
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>

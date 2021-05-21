@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="#05248B"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileScreen">
+
+    <RelativeLayout
+        android:background="#051E6E"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <ImageView
+            android:onClick="profile"
+            android:layout_centerVertical="true"
+            android:id="@+id/back_image"
+            android:layout_marginLeft="10dp"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/ic_left_arrow__2_">
+        </ImageView>
+
+
+        <TextView
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/back_image"
+            android:textColor="@android:color/white"
+            android:layout_marginLeft="12dp"
+            android:layout_gravity="center"
+            android:textSize="20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Profile" />
+
+        <ImageView
+            android:layout_marginRight="12dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/ic_baseline_notifications_24">
+        </ImageView>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="#041955"
+        android:orientation="horizontal"
+        android:padding="16dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profile_image"
+            android:layout_centerVertical="true"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="40dp"
+            android:src="@drawable/nav"/>
+
+
+        <TextView
+            android:id="@+id/profile_gmail"
+            android:layout_toRightOf="@id/profile_image"
+            android:layout_marginTop="68dp"
+            android:layout_marginLeft="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="gmail"
+            android:textColor="@android:color/white"
+            android:textSize="12dp" />
+
+        <TextView
+            android:layout_centerVertical="true"
+            android:id="@+id/profile_name"
+            android:layout_toRightOf="@id/profile_image"
+            android:layout_marginLeft="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Jhon Smith"
+            android:textColor="@android:color/white"
+            android:textSize="14dp" />
+
+        <ImageView
+            android:src="@drawable/ic_pencil__3_"
+            android:layout_centerVertical="true"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"></ImageView>
+
+
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_marginLeft="12dp"
+        android:padding="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_gravity="center"
+            android:src="@drawable/ic_account"
+            android:layout_width="24dp"
+            android:layout_height="24dp"></ImageView>
+
+        <TextView
+            android:id="@+id/profile_account"
+            android:textColor="@android:color/white"
+            android:textSize="24sp"
+            android:layout_marginLeft="12dp"
+            android:text="Account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></TextView>
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginLeft="12dp"
+        android:padding="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_gravity="center"
+            android:src="@drawable/ic_question__1_"
+            android:layout_width="24dp"
+            android:layout_height="24dp"></ImageView>
+
+        <TextView
+            android:id="@+id/help"
+            android:textColor="@android:color/white"
+            android:textSize="24sp"
+            android:layout_marginLeft="12dp"
+            android:text="Help"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></TextView>
+
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_marginLeft="12dp"
+        android:padding="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_gravity="center"
+            android:src="@drawable/ic_newspaper"
+            android:layout_width="24dp"
+            android:layout_height="24dp"></ImageView>
+
+        <TextView
+            android:id="@+id/profile_news"
+            android:textColor="@android:color/white"
+            android:textSize="24sp"
+            android:layout_marginLeft="12dp"
+            android:text="News"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></TextView>
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginLeft="12dp"
+        android:padding="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_gravity="center"
+            android:src="@drawable/ic_logout__14_"
+            android:layout_width="24dp"
+            android:layout_height="24dp"></ImageView>
+
+        <TextView
+            android:onClick="profile_logout"
+            android:id="@+id/profile_logout"
+            android:textColor="@android:color/white"
+            android:textSize="24sp"
+            android:layout_marginLeft="12dp"
+            android:text="Logout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></TextView>
+
+
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

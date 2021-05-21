@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <group android:checkableBehavior="single"
+        android:id="@+id/menntop">
+
+        <item
+            android:id="@+id/nav_home"
+            android:title="Home"
+            android:icon="@drawable/ic_home__10_"></item>
+
+        <item
+            android:id="@+id/nav_account"
+            android:title="Account"
+            android:icon="@drawable/ic_account"></item>
+
+        <item
+            android:id="@+id/nav_invite"
+            android:title="Invite"
+            android:icon="@drawable/ic_invitation"></item>
+
+        <item
+            android:id="@+id/nav_term"
+            android:title="Term &amp; Condition"
+            android:icon="@drawable/ic_terms_and_conditions__1_"></item>
+
+        <item
+            android:id="@+id/nav_privacy"
+            android:title="Privacy"
+            android:icon="@drawable/ic_privacy_policy"></item>
+    </group>
+    <group
+        android:id="@+id/rate">
+        <item
+            android:id="@+id/nav_rateus"
+            android:title="Rate Us"
+            android:icon="@drawable/ic_rateus"></item>
+
+        <item
+            android:id="@+id/nav_contactus"
+            android:title="Contact Us"
+            android:icon="@drawable/ic_contact"></item>
+
+        <item
+            android:id="@+id/nav_suscripation"
+            android:title="Suscripation"
+            android:icon="@drawable/ic_subscription"></item>
+
+        <item
+            android:id="@+id/nav_logout"
+            android:title="Logout"
+            android:icon="@drawable/ic_logout__14_"></item>
+
+
+
+    </group>
+
+
+
+
+
+</menu>
