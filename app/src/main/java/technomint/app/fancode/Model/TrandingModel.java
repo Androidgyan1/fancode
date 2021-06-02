@@ -1,6 +1,8 @@
 package technomint.app.fancode.Model;
 
-public class TrandingModel {
+import java.io.Serializable;
+
+public class TrandingModel implements Serializable {
 
     int image;
     String name;
@@ -8,17 +10,27 @@ public class TrandingModel {
     String count_eye;
     String date;
     String time_trand;
+    String videoUrl;
 
 
 
 
-    public TrandingModel(int image, String name, String highlight, String count_eye, String date, String time_trand) {
+    public TrandingModel() {
+        this.videoUrl = videoUrl;
         this.image = image;
         this.name = name;
         this.highlight = highlight;
         this.count_eye = count_eye;
         this.date = date;
         this.time_trand = time_trand;
+    }
+
+    public String getVideoUrl() {
+        return videoUrl;
+    }
+
+    public void setVideoUrl(String videoUrl) {
+        this.videoUrl = videoUrl;
     }
 
     public String getTime_trand() {

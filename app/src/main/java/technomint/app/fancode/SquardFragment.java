@@ -9,7 +9,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.GridView;
 
-import technomint.app.fancode.Adapter.SportGridAdapter;
 import technomint.app.fancode.Adapter.SquardAdapter;
 
 public class SquardFragment extends Fragment {

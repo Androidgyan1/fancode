@@ -8,10 +8,12 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
+import androidx.fragment.app.FragmentActivity;
 import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.List;
 
+import technomint.app.fancode.Model.GridModel;
 import technomint.app.fancode.Model.LiveModel;
 import technomint.app.fancode.Model.NewsModel;
 import technomint.app.fancode.R;
@@ -24,6 +26,11 @@ public class LiveAdapter extends RecyclerView.Adapter<LiveAdapter.MyViewHolder> 
     public LiveAdapter(Context context, List<LiveModel> best) {
         this.context = context;
         this.best = best;
+    }
+
+    public LiveAdapter(FragmentActivity activity, int grid_sportitem, GridModel listData) {
+
+
     }
 
     public class MyViewHolder extends RecyclerView.ViewHolder {

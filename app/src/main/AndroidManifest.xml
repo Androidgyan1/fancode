@@ -9,10 +9,15 @@
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
+        android:usesCleartextTraffic="true"
+        android:networkSecurityConfig="@xml/network"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Fancode">
-        <activity android:name=".ProfileScreen"></activity>
+        <activity android:name=".News_detail"></activity>
+        <activity android:name=".Activity_Match_Category" />
+        <activity android:name=".PlayVideos" />
+        <activity android:name=".ProfileScreen" />
         <activity android:name=".ScorCard" />
         <activity android:name=".Subscripation" />
 
@@ -45,7 +50,21 @@
         </activity>
         <activity android:name=".OtpScreen" />
         <activity android:name=".LoginScreen" />
-        <activity android:name=".MainActivity" />
+        <activity android:name=".MainActivity">
+
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="fancodetechno.page.link"
+                    android:scheme="https" />
+            </intent-filter>
+
+
+        </activity>
 
         <receiver android:name=".MySMSBroadcastReceiver">
             <intent-filter>

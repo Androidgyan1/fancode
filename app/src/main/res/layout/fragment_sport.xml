@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     tools:context=".SportFragment">
 
-    <GridView
+    <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/griview"
         android:numColumns="2"
         android:gravity="center"
@@ -15,9 +15,17 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
 
+    <ProgressBar
+        android:id="@+id/sport_progress"
+        android:indeterminateTint="@android:color/white"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"></ProgressBar>
+
 
     <Button
         android:layout_marginBottom="100dp"
+        android:id="@+id/ci"
         android:layout_alignParentBottom="true"
         android:layout_marginRight="10dp"
         android:layout_marginLeft="10dp"

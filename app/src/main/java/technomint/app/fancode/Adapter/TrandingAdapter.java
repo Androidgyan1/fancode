@@ -1,6 +1,8 @@
 package technomint.app.fancode.Adapter;
 
 import android.content.Context;
+import android.content.Intent;
+import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -10,9 +12,11 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import java.io.Serializable;
 import java.util.List;
 
 import technomint.app.fancode.Model.TrandingModel;
+import technomint.app.fancode.PlayVideos;
 import technomint.app.fancode.R;
 
 public class TrandingAdapter extends RecyclerView.Adapter<TrandingAdapter.MyViewHolder> {
@@ -59,6 +63,16 @@ public class TrandingAdapter extends RecyclerView.Adapter<TrandingAdapter.MyView
         holder.count_eye.setText(app.getCount_eye());
         holder.date.setText(app.getDate());
         holder.time_trand.setText(app.getTime_trand());
+holder.itemView.setOnClickListener(new View.OnClickListener() {
+    @Override
+    public void onClick(View v) {
+        Bundle b = new Bundle();
+        b.putSerializable("videoData", best.get(position));
+        Intent i = new Intent(context, PlayVideos.class);
+        i.putExtras(b);
+        v.getContext().startActivity(i);
+    }
+});
 
     }
 

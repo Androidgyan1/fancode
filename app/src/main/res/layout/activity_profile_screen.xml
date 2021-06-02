@@ -49,7 +49,6 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="150dp"
-        android:background="#041955"
         android:orientation="horizontal"
         android:padding="16dp">
 
@@ -112,7 +111,7 @@
         <TextView
             android:id="@+id/profile_account"
             android:textColor="@android:color/white"
-            android:textSize="24sp"
+            android:textSize="21sp"
             android:layout_marginLeft="12dp"
             android:text="Account"
             android:layout_width="wrap_content"
@@ -138,7 +137,7 @@
         <TextView
             android:id="@+id/help"
             android:textColor="@android:color/white"
-            android:textSize="24sp"
+            android:textSize="21sp"
             android:layout_marginLeft="12dp"
             android:text="Help"
             android:layout_width="wrap_content"
@@ -165,7 +164,7 @@
         <TextView
             android:id="@+id/profile_news"
             android:textColor="@android:color/white"
-            android:textSize="24sp"
+            android:textSize="21sp"
             android:layout_marginLeft="12dp"
             android:text="News"
             android:layout_width="wrap_content"
@@ -192,7 +191,7 @@
             android:onClick="profile_logout"
             android:id="@+id/profile_logout"
             android:textColor="@android:color/white"
-            android:textSize="24sp"
+            android:textSize="21sp"
             android:layout_marginLeft="12dp"
             android:text="Logout"
             android:layout_width="wrap_content"

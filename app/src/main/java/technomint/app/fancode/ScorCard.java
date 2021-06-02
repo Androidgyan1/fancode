@@ -5,6 +5,7 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -20,14 +21,15 @@ public class ScorCard extends AppCompatActivity {
     Fragment fragment = null;
     FragmentManager fragmentManager;
     FragmentTransaction fragmentTransaction;
-
+    ScorCard activity;
+    Context context;
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_scor_card);
-
+          context=activity=this;
         tabLayout=(TabLayout)findViewById(R.id.tabLayout);
         frameLayout=(FrameLayout)findViewById(R.id.frameLayout);
         fragment = new ScoreFragment();///change fragment
@@ -77,7 +79,7 @@ public class ScorCard extends AppCompatActivity {
 
     public void score(View view) {
 
-        Intent i =new Intent(ScorCard.this,MainActivity.class);
+        Intent i =new Intent(activity,MainActivity.class);
         startActivity(i);
         finish();
     }

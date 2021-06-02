@@ -7,7 +7,7 @@ public class NewsFragmentModel {
     String news_title;
     String descripation_news;
 
-    public NewsFragmentModel(int news_image, String title_min, String news_title, String descripation_news) {
+    public NewsFragmentModel() {
         this.news_image = news_image;
         this.title_min = title_min;
         this.news_title = news_title;
