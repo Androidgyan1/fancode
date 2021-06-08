@@ -99,6 +99,7 @@ public class FootbalFragment extends Fragment {
                             jsonObject1 = news_trending.getJSONObject(i);
 
                             NewsFragmentModel categoryModel = new NewsFragmentModel();
+                            categoryModel.setNews_image(R.drawable.banner);
 
                             categoryModel.setNews_title(jsonObject1.getString("title"));
                             categoryModel.setDescripation_news(jsonObject1.getString("description").replaceAll("<(.*?)\\>"," "));

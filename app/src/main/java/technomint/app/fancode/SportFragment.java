@@ -72,6 +72,7 @@ public class SportFragment extends Fragment {
             public void onClick(View view) {
                 Intent i = new Intent(getActivity(), Activity_Match_Category.class);
                 startActivity(i);
+                getActivity().finish();
             }
         });
 
@@ -97,7 +98,7 @@ public class SportFragment extends Fragment {
                         GridModel listData =  new GridModel();
 
                         listData.setId(ob.getString("id"));
-                         listData.setName(ob.getString("name"));
+                         listData.setName(ob.getString("category_name"));
                         list_data.add(listData);
                         Log.d(TAG, "onResponse: " + response);
                         final LinearLayoutManager managerbestsearch3 = new LinearLayoutManager(getActivity());

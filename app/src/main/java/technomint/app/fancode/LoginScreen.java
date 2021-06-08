@@ -64,6 +64,7 @@ public class LoginScreen extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login_screen);
+        // set this to remove reCaptcha web
 
         ///////dynamic link
 
@@ -204,7 +205,7 @@ public class LoginScreen extends AppCompatActivity {
 
                             @Override
                             public void onVerificationCompleted(@NonNull PhoneAuthCredential phoneAuthCredential) {
-                               // signInWithPhoneAuthCredential(phoneAuthCredential);
+                                signInWithPhoneAuthCredential(phoneAuthCredential);
                             }
 
                             @Override

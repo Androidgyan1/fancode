@@ -78,7 +78,7 @@ public class CricketAdapter extends RecyclerView.Adapter<CricketAdapter.MyViewHo
         holder.championship.setText(app.getChampionship());
         //holder.timekkr.setText(app.getTimekkr());
 
-       // Glide.with(context).load(Config.matchesImaage  + best.get(position).getTeam1image()).into(holder.team1image);
+        //Glide.with(context).load(Config.matchesImaage  + best.get(position).getTeam1image()).into(holder.team1image);
        // Glide.with(context).load(Config.matchesImaage  + best.get(position).getTeam2image()).into(holder.team2image);
 
     }

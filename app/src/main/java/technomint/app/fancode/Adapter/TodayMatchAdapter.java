@@ -28,19 +28,19 @@ public class TodayMatchAdapter extends RecyclerView.Adapter<TodayMatchAdapter.My
 
     public class MyViewHolder extends RecyclerView.ViewHolder {
         ImageView today_kkrimage,today_tkrimage;
-        TextView match_number,match_time,today_kkr_match,today_tkr_match,today_date,today_live_match;
+        TextView match_number_title,match_live_status,today_kkr_match,today_tkr_match,today_date,today_live_match;
 
         public MyViewHolder(@NonNull View itemView) {
             super(itemView);
 
-            today_kkrimage = itemView.findViewById(R.id.today_kkrimage);
-            today_tkrimage = itemView.findViewById(R.id.today_tkrimage);
-            match_number = itemView.findViewById(R.id.match_number);
-            match_time = itemView.findViewById(R.id.match_time);
+//            today_kkrimage = itemView.findViewById(R.id.today_kkrimage);
+//            today_tkrimage = itemView.findViewById(R.id.today_tkrimage);
+            match_number_title = itemView.findViewById(R.id.match_number_title);
+            match_live_status = itemView.findViewById(R.id.match_live_status);
             today_kkr_match = itemView.findViewById(R.id.today_kkr_match);
             today_tkr_match = itemView.findViewById(R.id.today_tkr_match);
             today_date = itemView.findViewById(R.id.today_date);
-            today_live_match = itemView.findViewById(R.id.today_live_match);
+          //  today_live_match = itemView.findViewById(R.id.today_live_match);
         }
     }
 
@@ -56,14 +56,14 @@ public class TodayMatchAdapter extends RecyclerView.Adapter<TodayMatchAdapter.My
     public void onBindViewHolder(@NonNull MyViewHolder holder, int position) {
         TodayMatchModel app = best.get(position);
 
-        holder.today_kkrimage.setImageResource(app.getToday_kkrimage());
-        holder.today_tkrimage.setImageResource(app.getToday_tkrimage());
-        holder.match_number.setText(app.getMatch_number());
-        holder.match_time.setText(app.getMatch_time());
-        holder.today_kkr_match.setText(app.getToday_kkr_match());
-        holder.today_tkr_match.setText(app.getToday_tkr_match());
-        holder.today_date.setText(app.getToday_date());
-        holder.today_live_match.setText(app.getToday_live_match());
+//        holder.today_kkrimage.setImageResource(app.getToday_kkrimage());
+//        holder.today_tkrimage.setImageResource(app.getToday_tkrimage());
+        holder.match_number_title.setText(app.getMatch_type());
+        holder.match_live_status.setText(app.getStatusmatch());
+        holder.today_kkr_match.setText(app.getTeamtitle1());
+        holder.today_tkr_match.setText(app.getTeamtitle2());
+        holder.today_date.setText(app.getMatchdata());
+        //
 
     }
 

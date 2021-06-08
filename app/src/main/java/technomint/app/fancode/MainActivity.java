@@ -140,7 +140,7 @@ public class MainActivity extends AppCompatActivity  implements NavigationView.O
                         break;
 
                     case R.id.mishedule:
-                        fragment = new SheduleFragment();
+                        fragment = new Shedule2Fragment();
                         break;
 
                     case R.id.misport:
@@ -214,7 +214,7 @@ public class MainActivity extends AppCompatActivity  implements NavigationView.O
 
                 break;
             case R.id.nav_term:
-                Intent i2 = new Intent(MainActivity.this,PlayVideos.class);
+                Intent i2 = new Intent(MainActivity.this,ScorCard.class);
                 startActivity(i2);
                 break;
 

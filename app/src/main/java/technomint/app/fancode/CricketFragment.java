@@ -206,7 +206,7 @@ public class CricketFragment extends Fragment {
                             categoryModel.setName(jsonObject1.getString("title"));
                             categoryModel.setDate(convertTime(jsonObject1.getString("updatedate")));
                             categoryModel.setHighlight("Highlight");
-                            //categoryModel.setImg(jsonObject1.getInt("img"));
+                            categoryModel.setVideoUrl(jsonObject1.getString("video"));
 
 
                             //adding the hero to herolist
@@ -432,6 +432,17 @@ public class CricketFragment extends Fragment {
 
 
     private void getCourseDetails(String toString) {
+//        JSONObject jsonObject = new JSONObject();
+//        try {
+//
+//            jsonObject.put("mobile", "");
+//                }
+//
+//    catch (Exception e)
+//    {
+//        e.printStackTrace();
+//    }
+
 
         // creating a new variable for our request queue
         RequestQueue queue = Volley.newRequestQueue(getActivity());
@@ -472,6 +483,8 @@ public class CricketFragment extends Fragment {
                             categoryModel.setTeamtitle1(jsonObject1.getString("teamtitle1"));
                             categoryModel.setTeamtitle2(jsonObject1.getString("teamtitle2"));
                             categoryModel.setMatchdata(jsonObject1.getString("matchdata"));
+                            categoryModel.setTeam1image(jsonObject1.getString("team1image"));
+                            categoryModel.setTeam2image(jsonObject1.getString("team2image"));
 
 
                             //adding the hero to herolist
@@ -497,11 +510,11 @@ public class CricketFragment extends Fragment {
                     Toast.makeText(getActivity(), "Fail to get course" + error, Toast.LENGTH_SHORT).show();
                 }
             }) {
-               /// @Override
-              //  public byte[] getBody() throws AuthFailureError {
-                  //  String str = String.valueOf(jsonObject);
-                  ///  return str.getBytes();
-              //  }
+//                @Override
+//                public byte[] getBody() throws AuthFailureError {
+//                   String str = String.valueOf(jsonObject);
+//                   return str.getBytes();
+//                }
                 @Override
                 public String getBodyContentType() {
                     return "application/json; charset=utf-8";

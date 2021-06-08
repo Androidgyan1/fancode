@@ -36,6 +36,7 @@
             android:src="@drawable/trending" />
 
             <TextView
+                android:visibility="gone"
                 android:id="@+id/time_trand"
                 android:textAlignment="center"
                 android:background="@drawable/time_bac"
@@ -49,6 +50,11 @@
                 android:textSize="14sp"></TextView>
 
         </RelativeLayout>
+
+        <View
+            android:background="@android:color/white"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"></View>
 
         <RelativeLayout
             android:layout_width="match_parent"

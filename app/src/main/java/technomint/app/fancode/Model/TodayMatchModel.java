@@ -1,87 +1,87 @@
 package technomint.app.fancode.Model;
 
 public class TodayMatchModel {
-    String match_number;
-    String match_time;
-    String today_kkr_match;
-    String today_tkr_match;
-    int today_kkrimage;
-    int today_tkrimage;
-    String today_date;
-    String today_live_match;
+    String id;
+    String matchdata;
+    String teamtitle1;
+    String teamtitle2;
+    String match_type;
+    String statusmatch;
+    int team1image;
+    int team2image;
 
-    public TodayMatchModel(String match_number, String match_time, String today_kkr_match, String today_tkr_match, int today_kkrimage, int today_tkrimage, String today_date, String today_live_match) {
-        this.match_number = match_number;
-        this.match_time = match_time;
-        this.today_kkr_match = today_kkr_match;
-        this.today_tkr_match = today_tkr_match;
-        this.today_kkrimage = today_kkrimage;
-        this.today_tkrimage = today_tkrimage;
-        this.today_date = today_date;
-        this.today_live_match = today_live_match;
+    public TodayMatchModel() {
+        this.id = id;
+        this.matchdata = matchdata;
+        this.teamtitle1 = teamtitle1;
+        this.teamtitle2 = teamtitle2;
+        this.match_type = match_type;
+        this.statusmatch = statusmatch;
+        this.team1image = team1image;
+        this.team2image = team2image;
     }
 
-    public String getMatch_number() {
-        return match_number;
+    public String getId() {
+        return id;
     }
 
-    public void setMatch_number(String match_number) {
-        this.match_number = match_number;
+    public void setId(String id) {
+        this.id = id;
     }
 
-    public String getMatch_time() {
-        return match_time;
+    public String getMatchdata() {
+        return matchdata;
     }
 
-    public void setMatch_time(String match_time) {
-        this.match_time = match_time;
+    public void setMatchdata(String matchdata) {
+        this.matchdata = matchdata;
     }
 
-    public String getToday_kkr_match() {
-        return today_kkr_match;
+    public String getTeamtitle1() {
+        return teamtitle1;
     }
 
-    public void setToday_kkr_match(String today_kkr_match) {
-        this.today_kkr_match = today_kkr_match;
+    public void setTeamtitle1(String teamtitle1) {
+        this.teamtitle1 = teamtitle1;
     }
 
-    public String getToday_tkr_match() {
-        return today_tkr_match;
+    public String getTeamtitle2() {
+        return teamtitle2;
     }
 
-    public void setToday_tkr_match(String today_tkr_match) {
-        this.today_tkr_match = today_tkr_match;
+    public void setTeamtitle2(String teamtitle2) {
+        this.teamtitle2 = teamtitle2;
     }
 
-    public int getToday_kkrimage() {
-        return today_kkrimage;
+    public String getMatch_type() {
+        return match_type;
     }
 
-    public void setToday_kkrimage(int today_kkrimage) {
-        this.today_kkrimage = today_kkrimage;
+    public void setMatch_type(String match_type) {
+        this.match_type = match_type;
     }
 
-    public int getToday_tkrimage() {
-        return today_tkrimage;
+    public String getStatusmatch() {
+        return statusmatch;
     }
 
-    public void setToday_tkrimage(int today_tkrimage) {
-        this.today_tkrimage = today_tkrimage;
+    public void setStatusmatch(String statusmatch) {
+        this.statusmatch = statusmatch;
     }
 
-    public String getToday_date() {
-        return today_date;
+    public int getTeam1image() {
+        return team1image;
     }
 
-    public void setToday_date(String today_date) {
-        this.today_date = today_date;
+    public void setTeam1image(int team1image) {
+        this.team1image = team1image;
     }
 
-    public String getToday_live_match() {
-        return today_live_match;
+    public int getTeam2image() {
+        return team2image;
     }
 
-    public void setToday_live_match(String today_live_match) {
-        this.today_live_match = today_live_match;
+    public void setTeam2image(int team2image) {
+        this.team2image = team2image;
     }
 }
